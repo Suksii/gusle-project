@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import construction from "../assets/images/construction.jpg";
 import { MdArrowBackIos } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 import { motion } from "framer-motion";
@@ -411,14 +410,14 @@ const HomePage = () => {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-r from-teal-900 via-teal-600 to-teal-900 bg-cover flex flex-col justify-center bg-center relative px-10">
+        <div className="relative px-10">
             <MdArrowBackIos className="fixed top-1/2 left-6 text-teal-100 cursor-pointer hover:text-teal-300 duration-300" size={38} onClick={showPrev} />
             <MdArrowForwardIos className="fixed top-1/2 right-6 text-teal-100 cursor-pointer hover:text-teal-300 duration-300" size={38} onClick={showNext} />
             <motion.h2 key={shownIndex}
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0 }}
-                transition={{ duration: 1 }} className="relative text-teal-100 text-2xl font-bold py-8">{songs[shownIndex].title}</motion.h2>
+                transition={{ duration: 1 }} className="relative text-teal-100 text-2xl font-bold py-8 uppercase">{songs[shownIndex].title}</motion.h2>
             <div className="w-full mx-auto flex justify-center py-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[100px] gap-y-12">
                     {songs[shownIndex].strofe.map((strofa, index) => (
@@ -433,7 +432,7 @@ const HomePage = () => {
                     ))}
                 </div>
             </div>
-            <div className="fixed left-1/2 -translate-x-1/2 bottom-4">
+            <div className="fixed left-1/2 -translate-x-1/2 bottom-0 w-full flex justify-center bg-gradient-to-r from-teal-900 via-teal-600 to-teal-900 py-6">
                 <div className="flex gap-1 items-center">
                     {songs.map((_, index) => (
                         <div className={`w-12 h-2 ${shownIndex === index ? 'bg-teal-950' : 'bg-teal-100'} cursor-pointer duration-1000`} key={index} onClick={() => showIndex(index)}></div>
