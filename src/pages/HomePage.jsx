@@ -208,6 +208,182 @@ const HomePage = () => {
                     Ono mjeri četrdeset oka,<br />
                     A sindžir vezan na halkama,<br />
                     Šala nije zulum od dušmana,
+                </span>,
+                <span>
+                    Tako drži sedam godin' dana,<br />
+                    Škripe njemu zubi u vilice,<br />
+                    A drhte mu ruke i mišice,<br />
+                    Vjeđe guste na obraz spustio,<br />
+                    A krvave oči zamutio,<br />
+                    Pod brkove zube iskesio,<br />
+                    Da ban pride samo malo bolje,<br />
+                    On zubima šćaše da ga kolje!<br />
+                    Kad Alija takvog bana vide,<br />
+                    On ne smjede dalje da mu pride,<br />
+                    Gleda bane careve gazije,<br />
+                    Al' ne smije prići do Alije,<br />
+                    Alija se trže iz julara,<br />
+                    Da dohvati bana od Zadara,<br />
+                    Iako su ruke zavezane,<br />
+                    On zubima htjede zaklat' bana,<br />
+                    Sad ovako njemu progovara:<br />
+                    "Kaurine, primakni se bliže,<br />
+                    Da ti dam što si zatražio,<br />
+                    Sve ću dati što si zatražio,<br />
+                    Ne dam Ajku za života moga,<br />
+                    A znaš, Vlahu, ne znala te majka, <br />
+                    Da hrišćanu ne pripada Ajka,<br />
+                    Nit' je bilo, niti biti može,<br />
+                    Da pogazim dina i imana,<br />
+                    I da dadem sestru za dušmana,<br />
+                    Nek mi ode sa ramena glava,<br />
+                    Ja svakako moram umrijeti,<br />
+                    Al'Akjunu ti nećeš uzeti!"
+                </span>
+            ]
+        },
+        {
+            title: 'Đerzelez Alija',
+            strofe: [
+                <span>
+                    Rodi majka sina jedihnika,<br />
+                    Pa sakupi hodže i hadžije,<br />
+                    Te momčetu ime nadjenuše, <br />
+                    I ezana hodže izučiše,<br />
+                    Uz ezan mu ime govorahu,<br />
+                    Alija ga po imenu zvahu.<br />
+                    Hrani majka sina jedihnika,
+                    Hranila ga punih osam ljeta,<br />
+                    I deveto, pa se razbolješe,<br />
+                    Bolovaše tri mjeseca dana,<br />
+                    Tada Aljo ostade bez baba,<br />
+                    Druge hefte umrije i mati,<br />
+                    Osta Aljo siroče da pati.<br />
+                    Jesti mora, a hljeba ne ima,<br />
+                    Naćve62 su mu zelena planina,<br />
+                    Lov lovio, po gori hodio,<br />
+                    A sve lovi srne i košute,<br />
+                    Sam se hrani bez baba i majke,<br />
+                    Kroz planinu prolaze hajduci,<br />
+                    Il' prolaze brojni karavani,<br />
+                    S tovarima silnih trgovaca,
+                </span>,
+                <span>
+                    Te se Aljo skriva prolaznika,<br />
+                    Čare nije, a ni milo nije,<br />
+                    Trgovcima Aljo se pridruži,<br />
+                    Put putuje, ali ne zna kuda.<br />
+                    Kad dođoše Žirču i Klisuri,<br />
+                    Tu svratiše kahvi i mehani,<br />
+                    U mehani vinom se napili, <br />
+                    I hajvane malo odmoriti. <br />
+                    Pred mehanu dugačka dolina,<br />
+                    Tu se trči pješačka košija,<br />
+                    Baš nikako s Aljom sirotanom,<br />
+                    Ne nada se aga Smail-aga,<br />
+                    Da se Aljo Žirču vratit' neće,<br />
+                    Da ostavlja braću i cvijeće, <br />
+                    Da ostavlja kajmak i jaganjce,<br />
+                    Da će begu čuvati magarce.<br />
+                    Silne ate oba uzjahali,<br />
+                    U Saraj'vu begu doplahali,<br />
+                    Aljo begu za oko zapade,<br />
+                    Pa beg Alja moli da ostane,<br />
+                    Da s njim živi na bijele dvore,<br />
+                    Da ga bego svojim sinom zove.<br />
+                    Prevari se aga Smail-aga,<br />
+                    Prevari se i sirotan Aljo,<br />
+                    Prevari ih vreva i čaršija,<br />
+                    I begova laka lakrdija,<br />
+                    Dvije heftes Aljo umor vida,
+                </span>,
+                <span>
+                    Treće hefte beg mu zapovijeda:<br />
+                    "Ustaj, Aljo, na noge lahgane,<br />
+                    Te dotjeraj drva na tovare,<br />
+                    Ona štala što je kraj magaze,<br />
+                    Tebe čeka samar i magare, <br />
+                    Duga zima, drva omaljila,<br />
+                    A vrućina begu dobro prija!"<br />
+                    Ode Aljo gori i planini,<br />
+                    Te dotjera drva na magarca,<br />
+                    No kad prođe džadom kroz čaršiju,<br />
+                    Arsuz djeca, pa ga zadirkuju:<br />
+                    "Dobar momak, ćelava mu glava,<br />
+                    Sa magarcem dva plaha hajvana!"<br />
+                    Tijem halom 68 dođe i proljeće,<br />
+                    Kroz planinu procvjetalo cvijeće,<br />
+                    Sunce sija, Alija se znoji,<br />
+                    Još više ga Žirču želja mori,<br />
+                    Suze roni, magarcu govori:<br />
+                    "Moj jarane, maleno magare!" <br />
+                    Aljo začu djetinjega plača, <br />
+                    Uši vrte Aljo i magare,<br />
+                    Hoće znati sa koje je strane,<br />
+                    Kad nekako stranu razaznaše,
+                    Aljo trči k'o da konja jaše,<br />
+                    Jaran osta kraj naramka drva,<br />
+                    Begova su neko da ih čuva.
+                </span>,
+                <span>
+                    Na proplanku Aljo kad izađe,<br />
+                    Uplakano on dijete nađe:<br />
+                    Od sunca mu pjena na ustima,<br />
+                    Od rođenja krila na leđima.<br />
+                    Kune Aljo majku prokletnicu,<br />
+                    Što makanju baci u planinu,<br />
+                    Uze junak djete u naruče,<br />
+                    Što od sunca i plača prepuče,<br />
+                    Odnese ga do debela hlada,<br />
+                    Pa djetetu poče da se jada:<br />
+                    "I ja sam ti sirotan, dijete,<br />
+                    Božji baksuz od glave do pete,<br />
+                    Evo tebi sva moja odjeća,<br />
+                    Jer je tebi ona sada preča,<br />
+                    I hranu ću tebi pribaviti,<br />
+                    Sa drveta mrezgu izguliti,<br />
+                    Neki vakat to će ti pomoći,<br />
+                    Može bit će tvoja majka doći, <br />
+                    Ja ću sjutra opet navratiti,<br />
+                    I tebe ću, bogme, posjetiti!"<br />
+                    To mu reče, pa gorom uteče,<br />
+                    Da tovari drva na hajvana,<br />
+                    Na hajvana, magare-jarana,<br />
+                    No kad drva natrpa jaranu,<br />
+                    Ču se huka i jeka planine,<br />
+                    Kod jarana doletješe vile,<br />
+                    Od jarana pomoći mu nema,<br />
+                    Sarajevo pa ga namučilo,<br />
+                    Namučio bego i čaršija,
+                </span>,
+                <span>
+                    Edepsuzi čaršijske kaldrme,<br />
+                    Al' najviše golema stijena,<br />
+                    Vrh planine de put započinje,<br />
+                    Svaki put mu za tovar zakači,<br />
+                    Te namuči Alja i magare,<br />
+                    Po dva puta tovar da tovare.<br />
+                    Progovara vila silovita:<br />
+                    "Pridi, sinko, da te ja zadojim,<br />
+                    Da junaka od tebe načinim,<br />
+                    Dobar jesi, bićeš i kuvetli,<br />
+                    Da se tobom svako ne šereti!"<br />
+                    Pride Aljo, vila ga zadoji,<br />
+                    Pa on snagu na stijeni proba,<br />
+                    Podiže je do pojasa svoga,<br />
+                    Od pojasa dalje ne mogaše. <br />
+                    Progovara vila silovita:<br />
+                    "Dođi sinko da to ponovimo".<br />
+                    Pride Aljo još malo podoji,<br />
+                    Pa on maši sa puta stijenu,<br />
+                    Te je skrajnu šumi da ne smeta.<br />
+                    Pita vila Alja sirotana:<br />
+                    "Kazuj, sinko, šta bi još želio?"<br />
+                    Aljo smišlja, pa joj odgovara:<br />
+                    "Kad mi dade snagu i vrlinu, <br />
+                    Daj mi konja kao gorsku vilu,<br />
+                    Kunem ti se Bogom jedinijem,<br />
+                    Da te brukat' nikada ne smijem,
                 </span>
             ]
         }
@@ -236,8 +412,8 @@ const HomePage = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-r from-teal-900 via-teal-600 to-teal-900 bg-cover flex flex-col justify-center bg-center relative px-10">
-            <MdArrowBackIos className="absolute top 1/2 translate-y-1/2 left-6 text-teal-100 cursor-pointer hover:text-teal-300 duration-300" size={38} onClick={showPrev} />
-            <MdArrowForwardIos className="absolute top 1/2 translate-y-1/2 right-6 text-teal-100 cursor-pointer hover:text-teal-300 duration-300" size={38} onClick={showNext} />
+            <MdArrowBackIos className="fixed top-1/2 left-6 text-teal-100 cursor-pointer hover:text-teal-300 duration-300" size={38} onClick={showPrev} />
+            <MdArrowForwardIos className="fixed top-1/2 right-6 text-teal-100 cursor-pointer hover:text-teal-300 duration-300" size={38} onClick={showNext} />
             <motion.h2 key={shownIndex}
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -257,7 +433,7 @@ const HomePage = () => {
                     ))}
                 </div>
             </div>
-            <div className="absolute left-1/2 -translate-x-1/2 bottom-4">
+            <div className="fixed left-1/2 -translate-x-1/2 bottom-4">
                 <div className="flex gap-1 items-center">
                     {songs.map((_, index) => (
                         <div className={`w-12 h-2 ${shownIndex === index ? 'bg-teal-950' : 'bg-teal-100'} cursor-pointer duration-1000`} key={index} onClick={() => showIndex(index)}></div>
