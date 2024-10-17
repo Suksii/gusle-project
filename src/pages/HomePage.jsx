@@ -251,7 +251,7 @@ const HomePage = () => {
                     I ezana hodže izučiše,<br />
                     Uz ezan mu ime govorahu,<br />
                     Alija ga po imenu zvahu.<br />
-                    Hrani majka sina jedihnika,
+                    Hrani majka sina jedihnika,<br />
                     Hranila ga punih osam ljeta,<br />
                     I deveto, pa se razbolješe,<br />
                     Bolovaše tri mjeseca dana,<br />
@@ -319,7 +319,7 @@ const HomePage = () => {
                     Aljo začu djetinjega plača, <br />
                     Uši vrte Aljo i magare,<br />
                     Hoće znati sa koje je strane,<br />
-                    Kad nekako stranu razaznaše,
+                    Kad nekako stranu razaznaše,<br />
                     Aljo trči k'o da konja jaše,<br />
                     Jaran osta kraj naramka drva,<br />
                     Begova su neko da ih čuva.
@@ -417,9 +417,9 @@ const HomePage = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0 }}
-                transition={{ duration: 1 }} className="relative text-teal-100 text-2xl font-bold py-8 uppercase">{songs[shownIndex].title}</motion.h2>
+                transition={{ duration: 1 }} className="relative text-teal-100 text-2xl font-bold py-4 uppercase">{songs[shownIndex].title}</motion.h2>
             <div className="w-full mx-auto flex justify-center py-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[100px] gap-y-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[100px] gap-y-12 pb-4">
                     {songs[shownIndex].strofe.map((strofa, index) => (
                         <motion.p key={index}
                             initial={{ opacity: 0, scale: 0 }}
@@ -432,7 +432,7 @@ const HomePage = () => {
                     ))}
                 </div>
             </div>
-            <div className="fixed left-1/2 -translate-x-1/2 bottom-0 w-full flex justify-center bg-gradient-to-r from-teal-900 via-teal-600 to-teal-900 py-6">
+            <div className="fixed left-1/2 -translate-x-1/2 bottom-0 w-full flex justify-center bg-gradient-to-r from-teal-900 via-teal-600 to-teal-900 py-4">
                 <div className="flex gap-1 items-center">
                     {songs.map((_, index) => (
                         <div className={`w-12 h-2 ${shownIndex === index ? 'bg-teal-950' : 'bg-teal-100'} cursor-pointer duration-1000`} key={index} onClick={() => showIndex(index)}></div>
