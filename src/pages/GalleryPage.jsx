@@ -17,42 +17,42 @@ const GalleryPage = () => {
 
     const gallery = [
         {
-            title: '',
+            title: 'Šućo Nurković',
             img: Guslar3,
             source: ''
         },
         {
-            title: '',
+            title: 'Zahit Llaić',
             img: Guslar8,
             source: ''
         },
         {
-            title: '',
+            title: 'Šućo Nurković',
             img: Guslar5,
             source: ''
         },
         {
-            title: '',
+            title: 'Šućo Nurković',
             img: Guslar4,
             source: ''
         },
         {
-            title: '',
+            title: 'Šućo Nurković',
             img: Guslar6,
             source: ''
         },
         {
-            title: '',
+            title: 'Šućo Nurković',
             img: Guslar2,
             source: ''
         },
         {
-            title: '',
+            title: 'Šućo Nurković',
             img: Guslar1,
             source: ''
         },
         {
-            title: '',
+            title: 'Šućo Nurković',
             img: Guslar7,
             source: ''
         },
@@ -98,20 +98,25 @@ const GalleryPage = () => {
                 <div className="cursor-pointer text-teal-100 hover:text-teal-400 absolute top-1/2 -translate-y-1/2 right-0 p-4 duration-300" onClick={showNext}>
                     <MdArrowForwardIos size={50} />
                 </div>
-                <img
-                    src={gallery[imageIndex].img}
-                    className={`w-auto max-w-full mx-auto h-auto max-h-screen py-4 duration-300 ease-in-out ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}
-                />
+                <div className="relative">
+                    <img
+                        src={gallery[imageIndex].img}
+                        className={`w-auto max-w-full mx-auto py-4 h-auto max-h-screen duration-300 ease-in-out ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}
+                    />
+                    <p className={`absolute bottom-0 right-0 p-3 px-6 mb-4 bg-teal-600 bg-opacity-70 text-teal-100 font-semibold ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>{gallery[imageIndex].title}</p>
+                </div>
+
             </div>
             <div className="gallery p-3 gap-3">
                 {gallery.map((item, index) => (
                     <motion.div initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.2 }}
-                        className="pics mb-3 cursor-pointer hover:filter hover:brightness-75"
+                        className="pics relative mb-3 cursor-pointer hover:filter hover:brightness-75"
                         key={index}
                         onClick={() => handleImage(index)}>
                         <img src={item.img} alt='' className="w-full object-cover" />
+                        <p className="absolute bottom-0 right-0 p-3 px-6 bg-teal-600 bg-opacity-70 text-teal-100 font-semibold">{item.title}</p>
                     </motion.div>
                 ))}
             </div>

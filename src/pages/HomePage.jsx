@@ -8,6 +8,7 @@ const HomePage = () => {
     const songs = [
         {
             title: 'Ropstvo sedam Bajagića',
+            author: 'Šućo Nurković',
             strofe: [
                 < span >
                     Dragi Bože, na svemu ti hvala, < br />
@@ -243,6 +244,7 @@ const HomePage = () => {
         },
         {
             title: 'Đerzelez Alija',
+            author: 'Šućo Nurković',
             strofe: [
                 <span>
                     Rodi majka sina jedihnika,<br />
@@ -418,6 +420,11 @@ const HomePage = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0 }}
                 transition={{ duration: 1 }} className="relative text-teal-100 text-2xl font-bold py-4 uppercase">{songs[shownIndex].title}</motion.h2>
+                            <motion.h2 key={shownIndex}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0 }}
+                transition={{ duration: 1 }} className="absolute bottom-0 right-10 text-teal-100 text-2xl font-bold p-4">{songs[shownIndex].author}</motion.h2>
             <div className="w-full mx-auto flex justify-center py-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[100px] gap-y-12 pb-4">
                     {songs[shownIndex].strofe.map((strofa, index) => (

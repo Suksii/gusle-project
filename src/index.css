@@ -16,6 +16,10 @@
     transition: all 400ms ease-in-out;
 }
 
+.gallery .pics p{
+    border-radius: 50%;
+}
+
 @media (max-width: 1000px) {
     .gallery {
         -webkit-column-count: 2;
