@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import GalleryPage from './pages/GalleryPage'
 import HomePage from './pages/HomePage'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/galerija" element={<GalleryPage />} />
       </Routes>
-      <GalleryPage />
+      <Footer />
     </div>
   )
 }
