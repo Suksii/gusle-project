@@ -71,17 +71,16 @@ const GalleryPage = () => {
 
     return (
         <>
-            {fullImage && (
-                <div
-                    className={`h-screen w-full fixed top-0 left-0 flex justify-center py-10 items-center bg-black bg-opacity-80 z-50`}
-                    style={{ transitionDuration: '300ms' }}
-                >
-                    <div className="absolute right-0 top-0 text-white p-3 cursor-pointer" onClick={closeImage}>
-                        <IoMdClose size={24} />
-                    </div>
-                    <img src={image} className="w-auto h-auto max-w-full max-h-full object-cover" />
+            <div
+                className={`h-screen w-full fixed top-0 left-0 flex justify-center items-center bg-teal-950 bg-opacity-90 transition-all duration-300 ease-in-out transform ${fullImage ? 'opacity-100 visible scale-0.5' : 'opacity-0 invisible scale-0'} z-50`}
+            >
+                <div className="absolute right-0 top-0 text-teal-100 p-3 cursor-pointer" onClick={closeImage}>
+                    <IoMdClose size={24} />
                 </div>
-            )}
+                <img src={image} className="w-auto max-w-full mx-auto h-auto max-h-screen py-4" />
+            </div>
+
+
             <div className="gallery p-3 gap-3">
                 {gallery.map((item, index) => (
                     <motion.div initial={{ opacity: 0, scale: 0.8 }}
