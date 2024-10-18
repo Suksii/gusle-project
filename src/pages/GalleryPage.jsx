@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Guslar1 from '../assets/guslar1.jpg'
 import Guslar2 from '../assets/guslar2.jpg'
 import Guslar3 from '../assets/guslar3.jpg'
@@ -7,6 +8,7 @@ import Guslar6 from '../assets/guslar6.jpg'
 import Guslar7 from '../assets/guslar7.jpg'
 import Guslar8 from '../assets/guslar8.jpg'
 import { motion } from 'framer-motion'
+import { IoMdClose } from "react-icons/io";
 
 
 const GalleryPage = () => {
@@ -54,19 +56,45 @@ const GalleryPage = () => {
         },
     ]
 
+    const [fullImage, setFullImage] = useState(false);
+    const [image, setImage] = useState("");
+
+    const handleImage = (imgSrc) => {
+        setImage(imgSrc);
+        setFullImage(true);
+    }
+
+    const closeImage = () => {
+        setFullImage(false);
+        setImage('');
+    };
+
     return (
-        <div className="gallery p-3 gap-3">
-            {
-                gallery.map((item, index) => (
+        <>
+            {fullImage && (
+                <div
+                    className={`h-screen w-full fixed top-0 left-0 flex justify-center py-10 items-center bg-black bg-opacity-80 z-50`}
+                    style={{ transitionDuration: '300ms' }}
+                >
+                    <div className="absolute right-0 top-0 text-white p-3 cursor-pointer" onClick={closeImage}>
+                        <IoMdClose size={24} />
+                    </div>
+                    <img src={image} className="w-auto h-auto max-w-full max-h-full object-cover" />
+                </div>
+            )}
+            <div className="gallery p-3 gap-3">
+                {gallery.map((item, index) => (
                     <motion.div initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.2 }}
-                        className="pics mb-3 cursor-pointer hover:filter hover:brightness-75" key={index}>
+                        className="pics mb-3 cursor-pointer hover:filter hover:brightness-75"
+                        key={index}
+                        onClick={() => handleImage(item.img)}>
                         <img src={item.img} alt='' className="w-full object-cover" />
                     </motion.div>
-                ))
-            }
-        </div>
+                ))}
+            </div>
+        </>
     )
 }
 
