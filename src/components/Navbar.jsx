@@ -1,15 +1,17 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
 
     const navMenu = [
-        'Pjesme',
-        'Guslari',
-        'Galerija'
+        { name: 'Pjesme', link: '/' },
+        // {name: 'Guslari', link: '/guslari'},
+        { name: 'Galerija', link: '/galerija' },
     ]
 
     return (
         <div className="flex justify-center gap-12 py-4">
             {navMenu.map((menu, index) => (
-                <p key={index} className="text-xl uppercase text-teal-100 font-semibold hover:text-teal-400 cursor-pointer duration-300">{menu}</p>
+                <Link to={menu.link} key={index} className="text-xl uppercase text-teal-100 font-semibold hover:text-teal-400 cursor-pointer duration-300">{menu.name}</Link>
             ))}
         </div>
     )
