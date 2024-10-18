@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MdArrowBackIos } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
 
