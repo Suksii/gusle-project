@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <div className="flex justify-center gap-12 py-4">
             {navMenu.map((menu, index) => (
-                <p className="text-xl uppercase text-teal-100 font-semibold hover:text-teal-400 cursor-pointer duration-300">{menu}</p>
+                <p key={index} className="text-xl uppercase text-teal-100 font-semibold hover:text-teal-400 cursor-pointer duration-300">{menu}</p>
             ))}
         </div>
     )

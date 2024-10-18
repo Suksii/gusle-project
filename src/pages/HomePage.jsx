@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MdArrowBackIos } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const HomePage = () => {
 
@@ -421,21 +421,22 @@ const HomePage = () => {
             <div className="w-full mx-auto flex justify-center py-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[100px] gap-y-12 pb-4">
                     {songs[shownIndex].strofe.map((strofa, index) => (
-                        <motion.p key={index}
-                            initial={{ opacity: 0, scale: 0 }}
+                        <motion.p key={`${shownIndex}-${index}`}
+                            initial={{ opacity: 0, scale: 0.7 }}
                             animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 0, scale: 0 }}
                             transition={{ duration: 1 }}
                             className="text-teal-100 text-lg md:text-xl leading-relaxed font-semibold border-l-4 border-teal-300 pl-4">
                             {strofa}
                         </motion.p>
+
                     ))}
                 </div>
             </div>
             <div className="fixed left-1/2 -translate-x-1/2 bottom-0 w-full flex justify-center bg-gradient-to-r from-teal-900 via-teal-600 to-teal-900 py-4">
                 <div className="flex gap-1 items-center">
                     {songs.map((_, index) => (
-                        <div className={`w-12 h-2 ${shownIndex === index ? 'bg-teal-950' : 'bg-teal-100'} cursor-pointer duration-1000`} key={index} onClick={() => showIndex(index)}></div>
+                        <div className={`w-12 h-2 ${shownIndex === index ? 'bg-teal-100' : 'bg-teal-950'} cursor-pointer duration-1000`} key={index} onClick={() => showIndex(index)}></div>
                     ))}
                 </div>
             </div>
