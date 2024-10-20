@@ -413,8 +413,8 @@ const HomePage = () => {
 
     return (
         <div className="relative px-10">
-            <MdArrowBackIos className="fixed top-1/2 left-6 text-teal-100 cursor-pointer hover:text-teal-300 duration-300" size={38} onClick={showPrev} />
-            <MdArrowForwardIos className="fixed top-1/2 right-6 text-teal-100 cursor-pointer hover:text-teal-300 duration-300" size={38} onClick={showNext} />
+            <MdArrowBackIos className="fixed top-1/2 md:left-6 left-0 text-teal-100 cursor-pointer hover:text-teal-300 duration-300" size={38} onClick={showPrev} />
+            <MdArrowForwardIos className="fixed top-1/2 md:right-6 right-0 text-teal-100 cursor-pointer hover:text-teal-300 duration-300" size={38} onClick={showNext} />
             <motion.h2 key={shownIndex}
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}

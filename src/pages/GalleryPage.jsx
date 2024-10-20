@@ -11,6 +11,7 @@ import { motion } from 'framer-motion';
 import { IoMdClose } from "react-icons/io";
 import { MdArrowBackIos } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
+import { useSwipeable } from "react-swipeable"
 
 
 const GalleryPage = () => {
@@ -86,9 +87,15 @@ const GalleryPage = () => {
         }, 200);
     }
 
+    const handlers = useSwipeable({
+        onSwipedLeft: () => showNext(),
+        onSwipedRight: () => showPrev(),
+        trackMouse: true,
+    })
+
     return (
         <>
-            <div className={`h-screen w-full fixed top-0 left-0 flex justify-center items-center bg-teal-950 transition-all duration-300 ease-in-out transform ${fullImage ? 'opacity-100 visible scale-0.5' : 'opacity-0 invisible scale-0'} z-50`}>
+            <div {...handlers} className={`h-screen w-full fixed top-0 left-0 flex justify-center items-center bg-teal-950 transition-all duration-300 ease-in-out transform ${fullImage ? 'opacity-100 visible scale-0.5' : 'opacity-0 invisible scale-0'} z-50`}>
                 <div className="absolute right-0 top-0 text-teal-100 p-3 cursor-pointer" onClick={() => setFullImage(false)}>
                     <IoMdClose size={24} />
                 </div>
