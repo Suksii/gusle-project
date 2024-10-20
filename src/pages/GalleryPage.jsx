@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Guslar1 from '../assets/guslar1.jpg';
 import Guslar2 from '../assets/guslar2.jpg';
 import Guslar3 from '../assets/guslar3.jpg';
@@ -92,6 +92,21 @@ const GalleryPage = () => {
         onSwipedRight: () => showPrev(),
         trackMouse: true,
     })
+
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if(e.key === 'ArrowLeft')
+                showPrev();
+            if(e.key === 'ArrowRight')
+                showNext();
+        }
+
+        window.addEventListener('keydown', handleKeyDown)
+
+
+        return () => window.removeEventListener('keydown', handleKeyDown)
+
+    }, [isTransitioning])
 
     return (
         <>
