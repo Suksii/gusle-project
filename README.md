@@ -5,13 +5,13 @@ This project is a web application built with React.js, design to present nationa
 
 ## Technical Details
 - **React.js:**
-  - `useState`
-  - react-icons
+  - `useState, useEffect`
+  - `react-icons`
   - `framer-motion`
   - `tailwindCSS`
   - `react-router-dom (BrowserRouter, Routes, Route, Link)`
  
-- **JacaScript:** , window.open, setTimeout, map
+- **JacaScript:** , window.open, setTimeout, map, window.addEventListener, window.removeEventListener
 
 ## Usage
 
