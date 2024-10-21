@@ -1,7 +1,7 @@
 # National music instruments
 
 ## About
-This project is a web application built with React.js, design to present national instrument - gusle. The interface was developed based on specific requirements profided by the Government.
+This project is a web application built with React.js, design to present national instrument - gusle. The interface was developed based on specific requirements profided by the Government. The Home Page shows a slider of different songs, and the Gallery Page shows pictures of different fiddlers.
 
 ## Technical Details
 - **React.js:**
@@ -12,8 +12,6 @@ This project is a web application built with React.js, design to present nationa
   - `react-router-dom (BrowserRouter, Routes, Route, Link)`
  
 - **JacaScript:** , window.open, setTimeout, map, window.addEventListener, window.removeEventListener
-
-## Usage
 
 ## Installation
 1. Create a folder on the desktop: `mkdir MyProject`
