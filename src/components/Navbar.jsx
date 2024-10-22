@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navMenu = [
-    { name: "Pjesme", link: "/" },
-    { name: "Gusle", link: "/gusle" },
+    { name: "Gusle", link: "/" },
+    { name: "Pjesme", link: "/pjesme" },
     { name: "Galerija", link: "/galerija" },
   ];
 
