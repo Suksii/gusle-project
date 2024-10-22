@@ -5,6 +5,7 @@ import GalleryPage from './pages/GalleryPage'
 import HomePage from './pages/HomePage'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import FiddlePage from './pages/FiddlePage'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/gusle" element={<FiddlePage />} />
         <Route path="/galerija" element={<GalleryPage />} />
       </Routes>
       <Footer />
