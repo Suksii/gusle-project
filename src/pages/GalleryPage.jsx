@@ -7,6 +7,11 @@ import Guslar5 from "../assets/guslar5.jpg";
 import Guslar6 from "../assets/guslar6.jpg";
 import Guslar7 from "../assets/guslar7.jpg";
 import Guslar8 from "../assets/guslar8.jpg";
+import Guslar10 from "../assets/guslar10.jpg";
+import Guslar11 from "../assets/guslar11.jpg";
+import Guslar12 from "../assets/guslar12.jpg";
+import Guslar13 from "../assets/guslar13.jpg";
+
 import { motion } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
 import { MdArrowBackIos } from "react-icons/md";
@@ -53,6 +58,26 @@ const GalleryPage = () => {
     {
       title: "Šućo Nurković",
       img: Guslar7,
+      source: "",
+    },
+    {
+      title: "Avdo Međedović",
+      img: Guslar10,
+      source: "",
+    },
+    {
+      title: "Avdo Međedović",
+      img: Guslar11,
+      source: "",
+    },
+    {
+      title: "Avdo Međedović",
+      img: Guslar12,
+      source: "",
+    },
+    {
+      title: "Avdo Međedović",
+      img: Guslar13,
       source: "",
     },
   ];
