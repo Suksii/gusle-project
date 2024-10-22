@@ -122,13 +122,13 @@ const GalleryPage = () => {
           <IoMdClose size={24} />
         </div>
         <div
-          className="cursor-pointer text-teal-100 hover:text-teal-400 absolute top-1/2 -translate-y-1/2 left-0 p-4 duration-300"
+          className="cursor-pointer text-teal-100 hover:text-teal-400 absolute top-1/2 -translate-y-1/2 left-0 p-4 duration-300 z-40"
           onClick={showPrev}
         >
           <MdArrowBackIos size={50} />
         </div>
         <div
-          className="cursor-pointer text-teal-100 hover:text-teal-400 absolute top-1/2 -translate-y-1/2 right-0 p-4 duration-300"
+          className="cursor-pointer text-teal-100 hover:text-teal-400 absolute top-1/2 -translate-y-1/2 right-0 p-4 duration-300 z-40"
           onClick={showNext}
         >
           <MdArrowForwardIos size={50} />
