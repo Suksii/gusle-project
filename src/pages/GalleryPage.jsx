@@ -161,6 +161,7 @@ const GalleryPage = () => {
         <div className="relative">
           <img
             src={gallery[imageIndex].img}
+            alt={gallery[imageIndex].title}
             className={`w-auto max-w-full mx-auto py-4 h-auto max-h-screen duration-300 ease-in-out ${
               isTransitioning ? "opacity-0" : "opacity-100"
             }`}
@@ -184,7 +185,7 @@ const GalleryPage = () => {
             key={index}
             onClick={() => handleImage(index)}
           >
-            <img src={item.img} alt="" className="w-full object-cover" />
+            <img src={item.img} alt={item.title} className="w-full object-cover" />
             <p className="absolute bottom-0 right-0 p-3 px-6 bg-teal-600 bg-opacity-70 text-teal-100 font-semibold">
               {item.title}
             </p>

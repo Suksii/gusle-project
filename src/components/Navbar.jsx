@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const navMenu = [
@@ -7,13 +7,15 @@ const Navbar = () => {
     { name: "Galerija", link: "/galerija" },
   ];
 
+  const path = useLocation().pathname;
+
   return (
     <div className="flex justify-center gap-12 py-4">
       {navMenu.map((menu, index) => (
         <Link
           to={menu.link}
           key={index}
-          className="text-xl uppercase text-teal-100 font-semibold hover:text-teal-400 cursor-pointer duration-300"
+          className={`text-xl uppercase text-teal-100 font-semibold hover:text-teal-400 cursor-pointer duration-300 ${path === menu.link ? 'text-teal-400' : ''}`}
         >
           {menu.name}
         </Link>
