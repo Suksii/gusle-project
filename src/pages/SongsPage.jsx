@@ -3,7 +3,7 @@ import { MdArrowBackIos } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 import { motion } from "framer-motion";
 
-const HomePage = () => {
+const SongsPage = () => {
   const songs = [
     {
       title: "Ropstvo sedam Bajagića",
@@ -700,7 +700,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="relative px-10">
+    <div className="relative">
       <MdArrowBackIos
         className="fixed top-1/2 md:left-6 left-0 text-teal-100 cursor-pointer hover:text-teal-300 duration-300"
         size={38}
@@ -717,7 +717,7 @@ const HomePage = () => {
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0 }}
         transition={{ duration: 1 }}
-        className="relative text-teal-100 text-2xl font-bold py-4 uppercase"
+        className="relative text-teal-100 text-2xl font-bold px-10 py-4 uppercase"
       >
         {songs[shownIndex].title}
       </motion.h2>
@@ -727,11 +727,11 @@ const HomePage = () => {
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0 }}
         transition={{ duration: 1 }}
-        className="absolute bottom-0 right-10 text-teal-100 text-2xl font-bold p-4"
+        className="absolute bottom-10 right-10 text-teal-100 text-2xl font-bold p-4"
       >
         {songs[shownIndex].author}
       </motion.h2>
-      <div className="w-full mx-auto flex justify-center py-10">
+      <div className="w-full mx-auto flex justify-center p-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[100px] gap-y-12 pb-4">
           {songs[shownIndex].strofe.map((strofa, index) => (
             <motion.p
@@ -747,7 +747,7 @@ const HomePage = () => {
           ))}
         </div>
       </div>
-      <div className="fixed left-1/2 -translate-x-1/2 bottom-0 w-full flex justify-center bg-gradient-to-r from-teal-900 via-teal-600 to-teal-900 py-4">
+      <div className="sticky bottom-0 w-full flex justify-center bg-gradient-to-r from-teal-900 via-teal-600 to-teal-900 py-4">
         <div className="flex gap-1 items-center">
           {songs.map((_, index) => (
             <div
@@ -764,4 +764,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default SongsPage;

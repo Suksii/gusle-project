@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import GalleryPage from "./pages/GalleryPage";
-import HomePage from "./pages/HomePage";
+import SongsPage from "./pages/SongsPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import FiddlePage from "./pages/FiddlePage";
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<FiddlePage />} />
-        <Route path="/pjesme" element={<HomePage />} />
+        <Route path="/pjesme" element={<SongsPage />} />
         <Route path="/galerija" element={<GalleryPage />} />
       </Routes>
       <Footer />
