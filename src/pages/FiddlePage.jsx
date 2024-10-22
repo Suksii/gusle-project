@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Gusle1 from "../assets/gusle14.png";
+import Gusle9 from "../assets/gusle9.jpg";
 
 const FiddlePage = () => {
   return (
@@ -13,22 +14,43 @@ const FiddlePage = () => {
       >
         Gusle kao simbol bosnjacke nacije u crnoj gori
       </motion.h2>
-      <motion.p
-        className="w-[90%] lg:w-1/3 mx-auto py-8 flex items-center text-teal-100 text-center text-xl leading-9"
-        initial={{ opacity: 0, y: -50, scale: 0.9 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        Gusle, tradicionalni balkanski gudački instrument, ima duboko ukorenjenu
-        simboliku u narodnoj kulturi Crne Gore, kao i kod Bošnjaka. Iako je
-        gusle često povezivana sa epovima i epskom tradicijom Srba i Crnogoraca,
-        ona je značajna i za Bošnjake u Crnoj Gori, gjde se koristi kao simbol
-        njihove kulturne baštine i identiteta.
-      </motion.p>
+      <div className="flex py-6 flex-col-reverse md:flex-row gap-4">
+        <motion.div
+          initial={{ opacity: 0, y: -50, scale: 0.9 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex justify-center px-10 rounded-md"
+          style={{ flex: 1 }}
+        >
+          <img
+            src={Gusle9}
+            alt="Gusle"
+            className="w-full md:w-[500px] h-[650px] mx-10 object-cover rounded-md"
+          />
+        </motion.div>
+        <div
+          className="w-full flex items-center justify-center md:justify-start"
+          style={{ flex: 1 }}
+        >
+          <motion.p
+            className="w-[80%] text-teal-100 text-center text-xl leading-9"
+            initial={{ opacity: 0, y: -50, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            Gusle, tradicionalni balkanski gudački instrument, ima duboko
+            ukorenjenu simboliku u narodnoj kulturi Crne Gore, kao i kod
+            Bošnjaka. Iako je gusle često povezivana sa epovima i epskom
+            tradicijom Srba i Crnogoraca, ona je značajna i za Bošnjake u Crnoj
+            Gori, gjde se koristi kao simbol njihove kulturne baštine i
+            identiteta.
+          </motion.p>
+        </div>
+      </div>
       <div className="flex flex-col lg:flex-row p-4">
         <motion.p
           initial={{ opacity: 0, x: -50, scale: 0.9 }}
-          animate={{ opacity: 1, x: 0, scale: 1 }}
+          whileInView={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="w-[90%] lg:w-1/4 mx-auto flex items-center text-teal-100 text-center lg:text-start text-xl leading-9"
         >
@@ -48,7 +70,7 @@ const FiddlePage = () => {
         <motion.p
           className="w-[90%] lg:w-1/4 mx-auto flex items-center text-teal-100 text-center lg:text-start text-xl leading-9"
           initial={{ opacity: 0, x: 50, scale: 0.9 }}
-          animate={{ opacity: 1, x: 0, scale: 1 }}
+          whileInView={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           Za Bošnjake u Crnoj Gori, gusle su postale simbol nacionalnog
@@ -63,7 +85,7 @@ const FiddlePage = () => {
       <motion.p
         className="w-[90%] lg:w-1/3 mx-auto py-8 flex items-center text-teal-100 text-center text-xl leading-9"
         initial={{ opacity: 0, y: 50, scale: 0.9 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         Iako je gusle uopšteno više poznata kao simbol crnogorske i srpske
