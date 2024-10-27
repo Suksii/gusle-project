@@ -11,6 +11,13 @@ import Guslar10 from "../assets/guslar10.jpg";
 import Guslar11 from "../assets/guslar11.jpg";
 import Guslar12 from "../assets/guslar12.jpg";
 import Guslar13 from "../assets/guslar13.jpg";
+import Gusle15 from "../assets/gusle15.jpg";
+import Gusle16 from "../assets/gusle16.jpg";
+import Gusle17 from "../assets/gusle17.jpg";
+import Gusle18 from "../assets/gusle18.jpg";
+import Gusle19 from "../assets/gusle19.jpg";
+import Gusle20 from "../assets/gusle20.jpg";
+
 
 import { motion } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
@@ -79,6 +86,36 @@ const GalleryPage = () => {
       title: "Avdo Međedović",
       img: Guslar13,
       source: "",
+    },
+    {
+      title: "",
+      img: Gusle15,
+      source: "Neir Čuturić",
+    },
+    {
+      title: "",
+      img: Gusle16,
+      source: "Neir Čuturić",
+    },
+    {
+      title: "",
+      img: Gusle17,
+      source: "Neir Čuturić",
+    },
+    {
+      title: "",
+      img: Gusle18,
+      source: "Neir Čuturić",
+    },
+    {
+      title: "",
+      img: Gusle19,
+      source: "Neir Čuturić",
+    },
+    {
+      title: "",
+      img: Gusle20,
+      source: "Neir Čuturić",
     },
   ];
 

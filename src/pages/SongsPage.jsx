@@ -698,7 +698,7 @@ const SongsPage = () => {
   const showIndex = (index) => {
     setShownIndex(index);
   };
-
+  
   return (
     <div className="relative">
       <MdArrowBackIos
@@ -712,7 +712,7 @@ const SongsPage = () => {
         onClick={showNext}
       />
       <motion.h2
-        key={shownIndex}
+        key={`song-${shownIndex}`}
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0 }}
@@ -754,7 +754,7 @@ const SongsPage = () => {
               className={`w-12 h-2 ${
                 shownIndex === index ? "bg-teal-100" : "bg-teal-950"
               } cursor-pointer duration-1000`}
-              key={index}
+              key={`slider-${index}`}
               onClick={() => showIndex(index)}
             ></div>
           ))}
