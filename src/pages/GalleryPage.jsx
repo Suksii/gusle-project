@@ -202,13 +202,19 @@ const GalleryPage = () => {
               isTransitioning ? "opacity-0" : "opacity-100"
             }`}
           />
-          <p
+          <div
             className={`absolute bottom-0 right-0 p-3 px-6 mb-4 bg-teal-600 bg-opacity-70 text-teal-100 font-semibold ${
               isTransitioning ? "opacity-0" : "opacity-100"
             }`}
           >
-            {gallery[imageIndex].title}
-          </p>
+            {gallery[imageIndex].title && <p>{gallery[imageIndex].title}</p>}
+            {gallery[imageIndex].source && (
+              <p className="flex flex-col justify-center items-center">
+                <span>Izvor fotografije:</span>
+                <span>{gallery[imageIndex].source}</span>
+              </p>
+            )}
+          </div>
         </div>
       </div>
       <div className="gallery p-3 gap-3">
@@ -226,14 +232,12 @@ const GalleryPage = () => {
               alt={item.title}
               className="w-full object-cover"
             />
-            <div className="absolute bottom-0 right-0">
+            <div className="absolute bottom-0 right-0 p-3 px-6 bg-teal-600 bg-opacity-70">
               {item.title && (
-                <p className="p-3 px-6 bg-teal-600 bg-opacity-70 text-teal-100 font-semibold">
-                  {item.title}
-                </p>
+                <p className=" text-teal-100 font-semibold">{item.title}</p>
               )}
               {item.source && (
-                <p className="flex flex-col items-center justify-center p-3 px-6 bg-teal-600 bg-opacity-70 text-teal-100 font-semibold">
+                <p className="flex flex-col items-center justify-center text-teal-100 font-semibold">
                   <span>Izvor fotografije: </span>
                   <span>{item.source}</span>
                 </p>
