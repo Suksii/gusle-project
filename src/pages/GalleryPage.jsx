@@ -18,7 +18,6 @@ import Gusle18 from "../assets/gusle18.jpg";
 import Gusle19 from "../assets/gusle19.jpg";
 import Gusle20 from "../assets/gusle20.jpg";
 
-
 import { motion } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
 import { MdArrowBackIos } from "react-icons/md";
@@ -222,10 +221,24 @@ const GalleryPage = () => {
             key={index}
             onClick={() => handleImage(index)}
           >
-            <img src={item.img} alt={item.title} className="w-full object-cover" />
-            <p className="absolute bottom-0 right-0 p-3 px-6 bg-teal-600 bg-opacity-70 text-teal-100 font-semibold">
-              {item.title}
-            </p>
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-full object-cover"
+            />
+            <div className="absolute bottom-0 right-0">
+              {item.title && (
+                <p className="p-3 px-6 bg-teal-600 bg-opacity-70 text-teal-100 font-semibold">
+                  {item.title}
+                </p>
+              )}
+              {item.source && (
+                <p className="flex flex-col items-center justify-center p-3 px-6 bg-teal-600 bg-opacity-70 text-teal-100 font-semibold">
+                  <span>Izvor fotografije: </span>
+                  <span>{item.source}</span>
+                </p>
+              )}
+            </div>
           </motion.div>
         ))}
       </div>
