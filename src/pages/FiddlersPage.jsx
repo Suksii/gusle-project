@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const FiddlersPage = () => {
   const fiddlersList = [
     {
@@ -33,8 +35,8 @@ const FiddlersPage = () => {
         {
           name: "Šerif Mandić",
           descriptions: [
-            "Biografija: Šerif Mandić bio je jedan od najpoznatijih bošnjačkih guslara, čije su pjesme i epovi stekli veliku popularnost, posebno među ljubiteljima tradicionalne guslarske umjetnosti. Mandić je bio izuzetno cijenjen zbog svog doprinosa očuvanju bošnjačke i balkanske tradicije, a kroz svoje guslarske pjesme prenosio je historijske događaje, priče o junaštvu i važne moralne lekcije.",
-            "Pjesme: Izvodio je pjesme koje govore o junacima i bitkama, često naglašavajući teme časti i heroizma.",
+            "Šerif Mandić bio je jedan od najpoznatijih bošnjačkih guslara, čije su pjesme i epovi stekli veliku popularnost, posebno među ljubiteljima tradicionalne guslarske umjetnosti. Mandić je bio izuzetno cijenjen zbog svog doprinosa očuvanju bošnjačke i balkanske tradicije, a kroz svoje guslarske pjesme prenosio je historijske događaje, priče o junaštvu i važne moralne lekcije.",
+            "Izvodio je pjesme koje govore o junacima i bitkama, često naglašavajući teme časti i heroizma.",
           ],
           songs: [
             {
@@ -64,8 +66,8 @@ const FiddlersPage = () => {
         {
           name: "Hajro Dervišević",
           descriptions: [
-            "Biografija: Hajro Dervišević je bio poznati guslar iz Crne Gore koji je kroz svoje pjesme na guslama pjevao o historijskim događajima, herojstvu i epskim pričama iz balkanske prošlosti. Njegove pjesme su često slavile narodne junake, bitke protiv Osmanlijskog carstva, kao i druge borbe za slobodu. Guslarska tradicija, kojoj je Hajro pripadao, bila je od ključnog značaja za očuvanje narodne tradicije, jezika i istorijskih predanja, posebno među narodima Balkana.",
-            "Pjesme: Njegove interpretacije obuhvatale su ljubavne teme, kao i priče o životu i borbama naroda.",
+            "Hajro Dervišević je bio poznati guslar iz Crne Gore koji je kroz svoje pjesme na guslama pjevao o historijskim događajima, herojstvu i epskim pričama iz balkanske prošlosti. Njegove pjesme su često slavile narodne junake, bitke protiv Osmanlijskog carstva, kao i druge borbe za slobodu. Guslarska tradicija, kojoj je Hajro pripadao, bila je od ključnog značaja za očuvanje narodne tradicije, jezika i istorijskih predanja, posebno među narodima Balkana.",
+            "Njegove interpretacije obuhvatale su ljubavne teme, kao i priče o životu i borbama naroda.",
           ],
           songs: [
             {
@@ -90,8 +92,8 @@ const FiddlersPage = () => {
         {
           name: "Osman Kulić",
           descriptions: [
-            "Biografija: Osman je bio cijenjeni guslar i muzičar iz Bara, poznat po svojoj sposobnosti da oživi stara predanja kroz svoje nastupe.",
-            "Pjesme: Izvodeći epske pjesme, često je obrađivao teme tradicije i identiteta.",
+            "Osman je bio cijenjeni guslar i muzičar iz Bara, poznat po svojoj sposobnosti da oživi stara predanja kroz svoje nastupe.",
+            "Izvodeći epske pjesme, često je obrađivao teme tradicije i identiteta.",
           ],
         },
       ],
@@ -105,19 +107,19 @@ const FiddlersPage = () => {
         {
           name: "Ramo Kolić",
           descriptions: [
-            "Biografija: Ramo Kolić je bio istaknuti guslar iz plavskog kraja. Poznat po snažnom glasu i vještini u pjevanju deseteraca, Kolić je bio posvećen temama bošnjačke historije, naročito pričama o bitkama, herojima i borbama za slobodu. Njegov rad bio je cijenjen u guslarskim krugovima i širom Crne Gore.",
+            "Ramo Kolić je bio istaknuti guslar iz plavskog kraja. Poznat po snažnom glasu i vještini u pjevanju deseteraca, Kolić je bio posvećen temama bošnjačke historije, naročito pričama o bitkama, herojima i borbama za slobodu. Njegov rad bio je cijenjen u guslarskim krugovima i širom Crne Gore.",
           ],
         },
         {
           name: "Šaban Kastrat",
           descriptions: [
-            "Biografija: Šaban Kastrat je bio još jedan poznati guslar iz Plava, čije su pjesme prenosile epske priče o bošnjačkoj i balkanskoj prošlosti. Kastrat je posebno bio poznat po izvođenju pjesama koje su govorile o borbama protiv neprijatelja, herojstvu bošnjačkog naroda i važnosti očuvanja vjere i tradicije.",
+            "Šaban Kastrat je bio još jedan poznati guslar iz Plava, čije su pjesme prenosile epske priče o bošnjačkoj i balkanskoj prošlosti. Kastrat je posebno bio poznat po izvođenju pjesama koje su govorile o borbama protiv neprijatelja, herojstvu bošnjačkog naroda i važnosti očuvanja vjere i tradicije.",
           ],
         },
         {
           name: "Meho Dervišević",
           descriptions: [
-            "Biografija: Meho Dervišević, iz plavskog kraja, bio je poznat po izvođenju epskih pjesama koje su slavile bošnjačke heroje i borbu protiv neprijatelja. Njegove guslarske izvedbe bile su duboko ukorijenjene u tradiciji, a publika ga je cijenila zbog njegovog emotivnog pristupa i vještine.",
+            "Meho Dervišević, iz plavskog kraja, bio je poznat po izvođenju epskih pjesama koje su slavile bošnjačke heroje i borbu protiv neprijatelja. Njegove guslarske izvedbe bile su duboko ukorijenjene u tradiciji, a publika ga je cijenila zbog njegovog emotivnog pristupa i vještine.",
           ],
         },
       ],
@@ -133,25 +135,25 @@ const FiddlersPage = () => {
         {
           name: "Avdo Međedović",
           descriptions: [
-            "Biografija: Avdo Međedović je jedan od najpoznatijih guslara sa ovog područja, a ujedno i jedan od najznačajnijih epskih pjesnika Bošnjaka. Međedović je postao svjetski poznat nakon što su ga istraživači usmene tradicije, poput Milmana Parryja i Alberta Lorda, otkrili i snimili njegove epske pjesme. Njegova najpoznatija pjesma, 'Ženidba Smailagić Meha', ima više od 12.000 stihova i predstavlja jedno od najvažnijih djela usmene tradicije Bošnjaka i šireg balkanskog prostora. Njegova poezija je očarala istraživače zbog svoje složenosti i bogatstva, te se često poredi sa Homerovim epovima.",
+            "Avdo Međedović je jedan od najpoznatijih guslara sa ovog područja, a ujedno i jedan od najznačajnijih epskih pjesnika Bošnjaka. Međedović je postao svjetski poznat nakon što su ga istraživači usmene tradicije, poput Milmana Parryja i Alberta Lorda, otkrili i snimili njegove epske pjesme. Njegova najpoznatija pjesma, 'Ženidba Smailagić Meha', ima više od 12.000 stihova i predstavlja jedno od najvažnijih djela usmene tradicije Bošnjaka i šireg balkanskog prostora. Njegova poezija je očarala istraživače zbog svoje složenosti i bogatstva, te se često poredi sa Homerovim epovima.",
           ],
         },
         {
           name: "Suljo Međedović",
           descriptions: [
-            "Biografija: Suljo Međedović, sin Avda Međedovića, također je bio poznati guslar. Naslijedivši očev talenat i ljubav prema guslama, Suljo je nastavio tradiciju epskog pjevanja, prenosivši priče o herojima, bitkama i značajnim historijskim događajima bošnjačkog naroda. Njegov rad je bio posvećen očuvanju porodične tradicije i guslarskog nasljeđa Bijelog Polja.",
+            "Suljo Međedović, sin Avda Međedovića, također je bio poznati guslar. Naslijedivši očev talenat i ljubav prema guslama, Suljo je nastavio tradiciju epskog pjevanja, prenosivši priče o herojima, bitkama i značajnim historijskim događajima bošnjačkog naroda. Njegov rad je bio posvećen očuvanju porodične tradicije i guslarskog nasljeđa Bijelog Polja.",
           ],
         },
         {
           name: "Mujo Šarić",
           descriptions: [
-            "Biografija: Mujo Šarić je bio guslar iz Bijelog Polja poznat po tome što je pjevao o bošnjačkim junacima i značajnim historijskim događajima iz prošlosti Bosne i Hercegovine i Crne Gore. Njegove pjesme su odražavale snažnu povezanost sa tradicijom, kao i ljubav prema guslama kao mediju prenošenja narodnih priča i vrijednosti.",
+            "Mujo Šarić je bio guslar iz Bijelog Polja poznat po tome što je pjevao o bošnjačkim junacima i značajnim historijskim događajima iz prošlosti Bosne i Hercegovine i Crne Gore. Njegove pjesme su odražavale snažnu povezanost sa tradicijom, kao i ljubav prema guslama kao mediju prenošenja narodnih priča i vrijednosti.",
           ],
         },
         {
           name: "Hajro Đečević",
           descriptions: [
-            "Biografija: Hajro Đečević, također iz Bijelog Polja, bio je prepoznatljiv po svojim epskim pjesmama koje su slavile bošnjačke borce i narodne junake. Đečević je, kao i drugi guslari, kroz svoje pjesme prenosio osjećaj ponosa i čuvanja identiteta, te je doprinosio očuvanju kulturnog nasljeđa Bošnjaka u Crnoj Gori.",
+            "Hajro Đečević, također iz Bijelog Polja, bio je prepoznatljiv po svojim epskim pjesmama koje su slavile bošnjačke borce i narodne junake. Đečević je, kao i drugi guslari, kroz svoje pjesme prenosio osjećaj ponosa i čuvanja identiteta, te je doprinosio očuvanju kulturnog nasljeđa Bošnjaka u Crnoj Gori.",
           ],
         },
       ],
@@ -167,31 +169,31 @@ const FiddlersPage = () => {
         {
           name: "Ibrahim Ljaković",
           descriptions: [
-            "Biografija: Ibrahim Ljaković je bio jedan od poznatijih guslara sa područja Rožaja. Njegove pjesme su se bavile temama borbe protiv Osmanlijskog carstva, kao i važnim historijskim ličnostima bošnjačkog naroda. Njegove guslarske izvedbe su bile duboko ukorijenjene u tradicionalnu epsku poeziju, a poznat je po emotivnim i moćnim interpretacijama.",
+            "Ibrahim Ljaković je bio jedan od poznatijih guslara sa područja Rožaja. Njegove pjesme su se bavile temama borbe protiv Osmanlijskog carstva, kao i važnim historijskim ličnostima bošnjačkog naroda. Njegove guslarske izvedbe su bile duboko ukorijenjene u tradicionalnu epsku poeziju, a poznat je po emotivnim i moćnim interpretacijama.",
           ],
         },
         {
           name: "Smail Malić",
           descriptions: [
-            "Biografija: Smail Malić je bio prepoznatljiv guslar iz Rožaja, koji je prenosio priče o bošnjačkim junacima, narodnim vođama i borbama za slobodu. Kroz svoje pjesme, Malić je slavio tradiciju i historijske vrijednosti bošnjačkog naroda, naglašavajući važnost hrabrosti i vjere. Njegov rad je cijenjen među ljubiteljima guslarske umjetnosti i poštovaocima narodnih epova.",
+            "Smail Malić je bio prepoznatljiv guslar iz Rožaja, koji je prenosio priče o bošnjačkim junacima, narodnim vođama i borbama za slobodu. Kroz svoje pjesme, Malić je slavio tradiciju i historijske vrijednosti bošnjačkog naroda, naglašavajući važnost hrabrosti i vjere. Njegov rad je cijenjen među ljubiteljima guslarske umjetnosti i poštovaocima narodnih epova.",
           ],
         },
         {
           name: "Šaban Međedović",
           descriptions: [
-            "Biografija: Šaban Međedović, poznat po svojim epskim pjesmama, bio je još jedan istaknuti guslar iz Rožaja. Njegove pjesme su govorile o slavnim bitkama i borcima koji su se suprotstavljali okupatorima, a kroz svoje guslarske izvedbe širio je priče o bošnjačkom ponosu i otporu. Međedović je bio poštovan zbog svoje posvećenosti guslarskoj tradiciji.",
+            "Šaban Međedović, poznat po svojim epskim pjesmama, bio je još jedan istaknuti guslar iz Rožaja. Njegove pjesme su govorile o slavnim bitkama i borcima koji su se suprotstavljali okupatorima, a kroz svoje guslarske izvedbe širio je priče o bošnjačkom ponosu i otporu. Međedović je bio poštovan zbog svoje posvećenosti guslarskoj tradiciji.",
           ],
         },
         {
           name: "Adem Kršić",
           descriptions: [
-            "Biografija: Adem Kršić, guslar sa područja Rožaja, poznat je po izvođenju epskih pjesama koje su opisivale događaje iz historije Bošnjaka i njihovih borbi na Balkanu. Njegov stil pjevanja i interpretacije bili su cijenjeni u široj regiji, a kroz svoje pjesme prenosio je moralne poruke i vrijednosti koje su bile od značaja za bošnjačku zajednicu.",
+            "Adem Kršić, guslar sa područja Rožaja, poznat je po izvođenju epskih pjesama koje su opisivale događaje iz historije Bošnjaka i njihovih borbi na Balkanu. Njegov stil pjevanja i interpretacije bili su cijenjeni u široj regiji, a kroz svoje pjesme prenosio je moralne poruke i vrijednosti koje su bile od značaja za bošnjačku zajednicu.",
           ],
         },
         {
           name: "Husein Dervišević",
           descriptions: [
-            "Biografija: Husein Dervišević je još jedan značajan guslar iz rožajskog kraja, koji je svojim pjesmama oživljavao slavne ličnosti i događaje iz bošnjačke prošlosti. Njegov doprinos guslarskoj tradiciji očitovao se u očuvanju starih pjesama, kao i u stvaranju novih, koje su imale za cilj prenositi duh epske poezije na mlađe generacije.",
+            "Husein Dervišević je još jedan značajan guslar iz rožajskog kraja, koji je svojim pjesmama oživljavao slavne ličnosti i događaje iz bošnjačke prošlosti. Njegov doprinos guslarskoj tradiciji očitovao se u očuvanju starih pjesama, kao i u stvaranju novih, koje su imale za cilj prenositi duh epske poezije na mlađe generacije.",
           ],
         },
       ],
@@ -207,13 +209,13 @@ const FiddlersPage = () => {
         {
           name: "Ahmet Dervišević",
           descriptions: [
-            "Biografija: Ahmet Dervišević je bio jedan od prepoznatljivih guslara iz Nikšića, koji je kroz svoje pjesme i gusle pjevao o historijskim događajima iz prošlosti bošnjačkog naroda. Njegove izvedbe su bile posvećene slavnim bitkama, borbi za očuvanje identiteta i slobode, te su prenosile jake moralne i duhovne poruke.",
+            "Ahmet Dervišević je bio jedan od prepoznatljivih guslara iz Nikšića, koji je kroz svoje pjesme i gusle pjevao o historijskim događajima iz prošlosti bošnjačkog naroda. Njegove izvedbe su bile posvećene slavnim bitkama, borbi za očuvanje identiteta i slobode, te su prenosile jake moralne i duhovne poruke.",
           ],
         },
         {
           name: "Mehmed Čorbo",
           descriptions: [
-            "Biografija: Mehmed Čorbo je bio poznati guslar koji je nastupao na brojnim guslarskim večerima i događajima, gdje je interpretirao epske pjesme koje su slavile bošnjačke junake i borce. Njegov stil bio je prepoznatljiv po emotivnom izražavanju i posvećenosti tradicionalnim vrijednostima, a njegovo ime je bilo poznato u guslarskim krugovima Nikšića i šire.",
+            "Mehmed Čorbo je bio poznati guslar koji je nastupao na brojnim guslarskim večerima i događajima, gdje je interpretirao epske pjesme koje su slavile bošnjačke junake i borce. Njegov stil bio je prepoznatljiv po emotivnom izražavanju i posvećenosti tradicionalnim vrijednostima, a njegovo ime je bilo poznato u guslarskim krugovima Nikšića i šire.",
           ],
         },
         {
@@ -225,13 +227,13 @@ const FiddlersPage = () => {
         {
           name: "Rasim Kusturica",
           descriptions: [
-            "Biografija: Rasim Kusturica je bio jedan od guslara koji su svojim radom doprinosili očuvanju bošnjačke kulturne baštine u Nikšiću. Njegove guslarske izvedbe su bile prepoznatljive po desetercima koji su prenosili narodne priče o borbama i herojima, ali i o svakodnevnom životu Bošnjaka u Crnoj Gori.",
+            "Rasim Kusturica je bio jedan od guslara koji su svojim radom doprinosili očuvanju bošnjačke kulturne baštine u Nikšiću. Njegove guslarske izvedbe su bile prepoznatljive po desetercima koji su prenosili narodne priče o borbama i herojima, ali i o svakodnevnom životu Bošnjaka u Crnoj Gori.",
           ],
         },
         {
           name: "Husein Ličina",
           descriptions: [
-            "Biografija: Husein Ličina je bio poznat guslar iz Crne Gore, ali nažalost nema mnogo sačuvanih ili dokumentovanih detalja o njegovim specifičnim guslarskim pjesmama, niti je njegov opus široko zabilježen u javnim izvorima. Guslari kao što je Husein Ličina često su stvarali usmenu poeziju koja se prenosila sa generacije na generaciju, što znači da je mnoge pjesme teško pronaći u pisanoj formi, jer su često ostale u sjećanju slušalaca i u živim izvedbama.",
+            "Husein Ličina je bio poznat guslar iz Crne Gore, ali nažalost nema mnogo sačuvanih ili dokumentovanih detalja o njegovim specifičnim guslarskim pjesmama, niti je njegov opus široko zabilježen u javnim izvorima. Guslari kao što je Husein Ličina često su stvarali usmenu poeziju koja se prenosila sa generacije na generaciju, što znači da je mnoge pjesme teško pronaći u pisanoj formi, jer su često ostale u sjećanju slušalaca i u živim izvedbama.",
           ],
           songs: [
             {
@@ -258,44 +260,79 @@ const FiddlersPage = () => {
   ];
 
   return (
-    <div className="">
+    <>
       {fiddlersList.map((region) => (
         <div key={region.id} className="mb-8">
-          <h2 className="text-2xl text-teal-100 font-semibold py-6">{region.title}</h2>
-          <p className="text-teal-50 mb-4">{region.subtitle}</p>
+          <motion.h2
+            className="text-2xl text-teal-100 font-semibold py-6"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            {region.title}
+          </motion.h2>
+          <motion.p
+            className="text-teal-50 mb-4 text-lg md:leading-8"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            {region.subtitle}
+          </motion.p>
           {region.fiddlers.map((fiddler) => (
-            <div
+            <motion.div
               key={fiddler.name}
               className="border-b border-teal-300 pb-4 mb-4"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
             >
-              <h3 className="text-xl text-teal-100 font-medium">{fiddler.name}</h3>
+              <h3 className="text-xl text-teal-100 font-medium">
+                {fiddler.name}
+              </h3>
               {fiddler.descriptions.map((description, index) => (
-                <p key={index} className="text-teal-50 mt-2">
+                <p
+                  key={index}
+                  className="text-teal-50 text-lg md:leading-8 mt-2"
+                >
                   {description}
                 </p>
               ))}
               {fiddler.songs && (
-                <div className="mt-4">
-                  <h4 className="text-lg font-semibold text-teal-50">Songs</h4>
+                <motion.div
+                  className="mt-4"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <h4 className="text-xl font-semibold text-teal-50">Pjesme</h4>
                   <ul className="list-disc pl-5">
                     {fiddler.songs.map((song, index) => (
-                      <li key={index} className="text-teal-50">
+                      <li
+                        key={index}
+                        className="text-teal-50 text-lg md:leading-8"
+                      >
                         <strong>{song.title}:</strong> {song.description}
                       </li>
                     ))}
                   </ul>
-                </div>
+                </motion.div>
               )}
               {fiddler.conclusion && (
-                <p className="text-teal-50 mt-4 italic">
+                <motion.p
+                  className="text-teal-50 italic text-lg md:leading-8 mt-4"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                >
                   {fiddler.conclusion}
-                </p>
+                </motion.p>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
