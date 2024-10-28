@@ -6,6 +6,7 @@ import SongsPage from "./pages/SongsPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import FiddlePage from "./pages/FiddlePage";
+import FiddlersPage from "./pages/FiddlersPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<FiddlePage />} />
         <Route path="/pjesme" element={<SongsPage />} />
         <Route path="/galerija" element={<GalleryPage />} />
+        <Route path="/guslari" element={<FiddlersPage />}/>
       </Routes>
       <Footer />
     </div>
