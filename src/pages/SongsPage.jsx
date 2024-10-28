@@ -698,16 +698,16 @@ const SongsPage = () => {
   const showIndex = (index) => {
     setShownIndex(index);
   };
-  
+
   return (
     <div className="relative">
       <MdArrowBackIos
-        className="fixed top-1/2 md:left-6 left-0 text-teal-100 cursor-pointer hover:text-teal-300 duration-300"
+        className="fixed top-1/2 md:left-6 left-0 text-teal-100 cursor-pointer hover:text-teal-300 duration-300 m-2"
         size={38}
         onClick={showPrev}
       />
       <MdArrowForwardIos
-        className="fixed top-1/2 md:right-6 right-0 text-teal-100 cursor-pointer hover:text-teal-300 duration-300"
+        className="fixed top-1/2 md:right-6 right-0 text-teal-100 cursor-pointer hover:text-teal-300 duration-300 m-2"
         size={38}
         onClick={showNext}
       />
@@ -717,7 +717,7 @@ const SongsPage = () => {
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0 }}
         transition={{ duration: 1 }}
-        className="relative text-teal-100 text-2xl font-bold py-4 uppercase"
+        className="relative text-teal-100 text-2xl font-bold py-4 uppercase container mx-auto"
       >
         {songs[shownIndex].title}
       </motion.h2>
@@ -727,7 +727,7 @@ const SongsPage = () => {
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0 }}
         transition={{ duration: 1 }}
-        className="absolute bottom-10 right-10 text-teal-100 text-2xl font-bold py-4"
+        className="absolute bottom-10 right-0 md:right-[10%] text-teal-100 text-2xl font-bold p-4"
       >
         {songs[shownIndex].author}
       </motion.h2>
@@ -747,7 +747,7 @@ const SongsPage = () => {
           ))}
         </div>
       </div>
-      <div className="sticky bottom-0 w-full flex justify-center bg-gradient-to-r from-teal-900 via-teal-600 to-teal-900 py-4">
+      <div className="sticky bottom-0 left-0 right-0 flex justify-center bg-gradient-to-r from-teal-900 via-teal-600 to-teal-900 py-4">
         <div className="flex gap-1 items-center">
           {songs.map((_, index) => (
             <div

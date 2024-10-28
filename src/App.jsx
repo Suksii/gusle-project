@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import GalleryPage from "./pages/GalleryPage";
@@ -9,9 +9,12 @@ import FiddlePage from "./pages/FiddlePage";
 import FiddlersPage from "./pages/FiddlersPage";
 
 function App() {
+
+  const path = useLocation().pathname;
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-teal-900 via-teal-600 to-teal-900">
-      <div className="container mx-auto px-4">
+      <div className={`${path === '/pjesme' ? '' : 'container' } mx-auto px-4`}>
         <Header />
         <Navbar />
         <Routes>
