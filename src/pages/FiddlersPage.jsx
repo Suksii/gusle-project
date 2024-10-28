@@ -258,7 +258,7 @@ const FiddlersPage = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="">
       {fiddlersList.map((region) => (
         <div key={region.id} className="mb-8">
           <h2 className="text-2xl text-teal-100 font-semibold py-6">{region.title}</h2>

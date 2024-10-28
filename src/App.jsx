@@ -11,15 +11,17 @@ import FiddlersPage from "./pages/FiddlersPage";
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-teal-900 via-teal-600 to-teal-900">
-      <Header />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<FiddlePage />} />
-        <Route path="/pjesme" element={<SongsPage />} />
-        <Route path="/galerija" element={<GalleryPage />} />
-        <Route path="/guslari" element={<FiddlersPage />} />
-      </Routes>
-      <Footer />
+      <div className="container mx-auto px-4">
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<FiddlePage />} />
+          <Route path="/pjesme" element={<SongsPage />} />
+          <Route path="/galerija" element={<GalleryPage />} />
+          <Route path="/guslari" element={<FiddlersPage />} />
+        </Routes>
+        <Footer />
+      </div>
     </div>
   );
 }

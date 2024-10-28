@@ -4,13 +4,13 @@ import Gusle9 from "../assets/gusle9.jpg";
 
 const FiddlePage = () => {
   return (
-    <div className="">
+    <>
       <motion.h2
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0 }}
         transition={{ duration: 1 }}
-        className="relative text-center text-teal-100 text-2xl font-bold p-4 uppercase"
+        className="relative text-center text-teal-100 text-2xl font-bold py-4 uppercase"
       >
         Gusle kao simbol bosnjacke nacije u crnoj gori
       </motion.h2>
@@ -19,7 +19,7 @@ const FiddlePage = () => {
           initial={{ opacity: 0, y: -50, scale: 0.9 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex justify-center px-10 rounded-md"
+          className="flex justify-center rounded-md"
           style={{ flex: 1 }}
         >
           <img
@@ -33,7 +33,7 @@ const FiddlePage = () => {
           style={{ flex: 1 }}
         >
           <motion.p
-            className="w-[80%] text-teal-100 text-center text-xl leading-9"
+            className="text-teal-100 text-center text-xl leading-9"
             initial={{ opacity: 0, y: -50, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -47,12 +47,12 @@ const FiddlePage = () => {
           </motion.p>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row p-4">
+      <div className="flex flex-col lg:flex-row py-4">
         <motion.p
           initial={{ opacity: 0, x: -50, scale: 0.9 }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="w-[90%] lg:w-1/4 mx-auto flex items-center text-teal-100 text-center lg:text-start text-xl leading-9"
+          className="lg:w-1/3 mx-auto flex items-center text-teal-100 text-center lg:text-start text-xl leading-9"
         >
           Bošnjaci u Crnoj Gori koriste gusle da bi prenosili svoju istoriju,
           narodne pesme i priče koje često slave važne ličnosti i događaje iz
@@ -68,7 +68,7 @@ const FiddlePage = () => {
           />
         </div>
         <motion.p
-          className="w-[90%] lg:w-1/4 mx-auto flex items-center text-teal-100 text-center lg:text-start text-xl leading-9"
+          className="lg:w-1/3 mx-auto flex items-center text-teal-100 text-center lg:text-start text-xl leading-9"
           initial={{ opacity: 0, x: 50, scale: 0.9 }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -83,7 +83,7 @@ const FiddlePage = () => {
         </motion.p>
       </div>
       <motion.p
-        className="w-[90%] lg:w-1/3 mx-auto py-8 flex items-center text-teal-100 text-center text-xl leading-9"
+        className="lg:w-1/3 mx-auto py-8 flex items-center text-teal-100 text-center text-xl leading-9"
         initial={{ opacity: 0, y: 50, scale: 0.9 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -93,7 +93,10 @@ const FiddlePage = () => {
         izražava kulturni i nacionalni identitet, pokazujući njenu univerzalnost
         i značaj za različite etničke grupe.
       </motion.p>
-    </div>
+      <div>
+
+      </div>
+    </>
   );
 };
 
