@@ -257,7 +257,46 @@ const FiddlersPage = () => {
     },
   ];
 
-  return <div></div>;
+  return (
+    <div className="container mx-auto px-4">
+      {fiddlersList.map((region) => (
+        <div key={region.id} className="mb-8">
+          <h2 className="text-2xl text-teal-100 font-semibold py-6">{region.title}</h2>
+          <p className="text-teal-50 mb-4">{region.subtitle}</p>
+          {region.fiddlers.map((fiddler) => (
+            <div
+              key={fiddler.name}
+              className="border-b border-teal-300 pb-4 mb-4"
+            >
+              <h3 className="text-xl text-teal-100 font-medium">{fiddler.name}</h3>
+              {fiddler.descriptions.map((description, index) => (
+                <p key={index} className="text-teal-50 mt-2">
+                  {description}
+                </p>
+              ))}
+              {fiddler.songs && (
+                <div className="mt-4">
+                  <h4 className="text-lg font-semibold text-teal-50">Songs</h4>
+                  <ul className="list-disc pl-5">
+                    {fiddler.songs.map((song, index) => (
+                      <li key={index} className="text-teal-50">
+                        <strong>{song.title}:</strong> {song.description}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {fiddler.conclusion && (
+                <p className="text-teal-50 mt-4 italic">
+                  {fiddler.conclusion}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default FiddlersPage;

@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
   const navMenu = [
     { name: "Gusle", link: "/" },
+    { name: "Guslari", link: "/guslari" },
     { name: "Pjesme", link: "/pjesme" },
     { name: "Galerija", link: "/galerija" },
   ];
@@ -10,7 +11,7 @@ const Navbar = () => {
   const path = useLocation().pathname;
 
   return (
-    <div className="flex justify-center gap-12 py-4">
+    <div className="flex flex-wrap justify-center gap-12 py-4 px-2">
       {navMenu.map((menu, index) => (
         <Link
           to={menu.link}
