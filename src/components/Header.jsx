@@ -7,8 +7,8 @@ const Header = () => {
     }
 
     return (
-        <div className="hidden md:flex justify-center cursor-pointer" onClick={goToFond}>
-            <div className="flex items-center text-xl justify-center gap-3 left-2 my-6">
+        <div className="flex justify-center items-center cursor-pointer px-4" onClick={goToFond}>
+            <div className="flex items-center text-xl justify-center gap-3 my-6">
                 <img src={fondLogo}
                      alt={"fond"}
                      className="w-12 h-12"/>
