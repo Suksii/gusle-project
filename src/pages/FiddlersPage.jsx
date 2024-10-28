@@ -277,13 +277,20 @@ const FiddlersPage = () => {
       {fiddlersList.map((region) => (
         <div key={region.id} className="mb-8">
           <motion.h2
-            className="text-2xl text-teal-100 font-semibold py-6"
+            className="w-fit flex flex-col gap-1 text-2xl text-teal-100 font-semibold py-6"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
             {region.title}
+            <motion.span
+              initial={{ width: "3rem" }}
+              whileInView={{ width: "100%" }}
+              transition={{ duration: 0.7, ease: "easeIn" }}
+              className="border-b-4 border-teal-100 rounded-full"
+            ></motion.span>
           </motion.h2>
+
           <motion.p
             className="text-teal-50 mb-4 text-lg md:leading-8"
             initial={{ opacity: 0, scale: 0.8 }}
