@@ -252,6 +252,19 @@ const FiddlersPage = () => {
                 "Kroz pjesme, guslari su često prenosili važne poruke o časti, poštenju, odanosti Bogu i domovini.",
             },
           ],
+          conclusion: (
+            <span>
+              Ako ste zainteresovani za specifične tekstove ili nazive njegovih
+              pjesama, najvjerovatnije bi bilo potrebno potražiti ih u arhivama
+              lokalnih kulturnih ustanova, muzičkih udruženja, ili među
+              potomcima i zajednicama koje su bile povezane s guslarom Huseinom
+              Ličinom.
+              <br />
+              Guslarska tradicija se često prenosila usmeno, pa mnogi guslari
+              nisu ostavili pisane zapise svojih pjesama, ali su njihove izvedbe
+              ostale dio lokalnog kulturnog nasljeđa.
+            </span>
+          ),
         },
       ],
       conclusion:
