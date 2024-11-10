@@ -11,7 +11,7 @@ This project is a web application built with React.js, design to present nationa
   - `tailwindCSS`
   - `react-router-dom (BrowserRouter, Routes, Route, Link)`
  
-- **JacaScript:** , window.open, setTimeout, map, window.addEventListener, window.removeEventListener
+- **JavaScript:** , window.open, setTimeout, map, window.addEventListener, window.removeEventListener
 
 ## Installation
 1. Create a folder on the desktop: `mkdir MyProject`
